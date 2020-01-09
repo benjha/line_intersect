@@ -3,9 +3,18 @@
 This repository includes the code for "A Rasterization Based Line Segment Intersection Algorithm for Urban Mobility Simulations"
 poster presented at the NVIDIA GPU Technology Conference 2016.
 
-## Notice
+## Dependencies
 
-If you use this code  in a publication, a link to or citation of both, this repository and our poster, would be appreciated. 
+OpenGL 4.x
+GLEW
+GLU
+FreeGLUT
+GLX
+X11
+
+### Notice
+
+If you use this code  in a publication, a link to or citation of both, our poster and this repository, would be appreciated. 
 
 The BibTex entries for our poster and code are:
 
@@ -16,11 +25,11 @@ howpublished= {NVIDIA GPU Technology Conference},
 year = {2016}
 }
 
-@misc{LineIntersect_2016b
-  auhor = {Hern\'andez, Benjam\'in},
-  title = {An implementation of a Rasterization Based Line Segment Intersection Algorithm for Urban Mobility Simulations},
-  year  = {2016},
-  url   = {https://github.com/benjha/Sight_FrameServer},
-  note	= {\url{https://github.com/benjha/Sight_FrameServer}}
+@misc{LineIntersect_2016b,
+auhor = {Hern\'andez, Benjam\'in},
+title = {An implementation of a Rasterization Based Line Segment Intersection Algorithm for Urban Mobility Simulations},
+year  = {2016},
+url = {https://github.com/benjha/line_intersect},
+note = {\url{https://github.com/benjha/line_intersect}}
 }
 

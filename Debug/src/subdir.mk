@@ -9,7 +9,6 @@ CPP_SRCS += \
 ../src/cFrustum.cpp \
 ../src/cLineIntersector.cpp \
 ../src/cLines.cpp \
-../src/cModel.cpp \
 ../src/cOpenGL_BaseApp.cpp \
 ../src/cProjectionManager.cpp \
 ../src/cQuad.cpp \
@@ -23,7 +22,6 @@ OBJS += \
 ./src/cFrustum.o \
 ./src/cLineIntersector.o \
 ./src/cLines.o \
-./src/cModel.o \
 ./src/cOpenGL_BaseApp.o \
 ./src/cProjectionManager.o \
 ./src/cQuad.o \
@@ -37,7 +35,6 @@ CPP_DEPS += \
 ./src/cFrustum.d \
 ./src/cLineIntersector.d \
 ./src/cLines.d \
-./src/cModel.d \
 ./src/cOpenGL_BaseApp.d \
 ./src/cProjectionManager.d \
 ./src/cQuad.d \

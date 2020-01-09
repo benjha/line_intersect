@@ -5,6 +5,8 @@
  *      Author: benjha
  */
 
+#include <string.h>
+
 #include <iomanip>
 #include <iostream>
 #include <fstream>
@@ -18,7 +20,6 @@
 #include "cQuad.h"
 #include "framebufferObject.h"
 #include "LoadShaders.h"
-#include "cModel.h"
 
 
 #define MAX_NODES 					4*WINDOW_WIDTH*WINDOW_HEIGHT // Maximum number of nodes in the linked list. Shared for all fragments.
@@ -68,7 +69,6 @@ cLineIntersector::cLineIntersector (unsigned int winWidth, unsigned int winHeigh
 cLineIntersector::~cLineIntersector ( )
 {
 	FREE_MEMORY		( fbo	);
-	FREE_MEMORY		( model	);
 	FREE_MEMORY		( quad	);
 	FREE_MEMORY		( roads );
 	FREE_ARRAY		( linkedList	);
@@ -257,7 +257,6 @@ void cLineIntersector::initMembers ()
 	rttShader			= 0;
 	fboColorTexId		= 0;
 	fboDepthTexId		= 0;
-	model				= 0;
 	freeNodeIndex		= 0;
 	headIndexTexture	= 0;
 	clearBuffer			= 0;
@@ -426,8 +425,6 @@ void cLineIntersector::init  ()
 				cout << "Check FBO configuration, rendering might not work. \n";
 			}
 	fbo->Disable();
-	std::string filename = "data/woman.obj";
-	model = new cModel (filename, 1.0f);
 
 	roads = new cLines (roadsFilename, 1.0f);
 

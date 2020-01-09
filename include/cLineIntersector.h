@@ -26,7 +26,6 @@ struct sNodeType
 
 class FramebufferObject;
 class cQuad;
-class cModel;
 class cLines;
 
 class cLineIntersector : public cOpenGL_GLUT_BaseApp
@@ -98,7 +97,6 @@ private:
 	// Shader to draw Intersection points
 	unsigned int		interShader;
 
-	cModel				*model;
 	// Variables to download linked list to RAM
 	sNodeType			*linkedList;
 	unsigned int 		*headIndexes;
